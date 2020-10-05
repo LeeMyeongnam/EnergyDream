@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.energydream.DetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/approve_detail_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사업명"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/approve_detail_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기업명"
+            android:textSize="15dp"
+            android:layout_below="@+id/approve_detail_business"/>
+
+        <ImageView
+            android:id="@+id/approve_detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/testimg"
+            android:layout_margin="10dp"
+            android:layout_below="@id/approve_detail_company"/>
+
+        <TextView
+            android:id="@+id/approve_detail_goalDate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마감날짜 : "
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/approve_detail_img"/>
+        <TextView
+            android:id="@+id/approve_detail_goalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.00.00"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/approve_detail_goalDate_text"
+            android:layout_below="@id/approve_detail_img"/>
+
+        <LinearLayout
+            android:id="@+id/approve_linear_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/approve_detail_goalDate_text"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_img"
+                android:text="목표 마일리지 : "
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/approve_detail_mileage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_img"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/approve_detail_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용  세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 세부내용 "
+            android:textSize="15dp"
+            android:layout_below="@id/approve_linear_mileage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/approve_detail_contents"
+            android:layout_marginTop="30dp">
+            <Button
+                android:id="@+id/approve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="승인"
+                android:textColor="#ffffff"
+                android:background="@drawable/design_main_button_angul"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/refuse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="거절"
+                android:textColor="#ffffff"
+                android:background="@drawable/design_main_button_angul"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

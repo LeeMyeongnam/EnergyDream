@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/history_busi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사업명"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/history_comp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회사명"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/history_busi_name" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/history_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/history_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/00 00:00"
+            android:textSize="15dp"
+            android:layout_below="@+id/history_coin"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

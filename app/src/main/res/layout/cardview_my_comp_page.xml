@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <!--왼쪽 텍스트 부분-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_busi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사업명"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모금 마일리지"
+                android:layout_below="@+id/text_busi_name"/>
+
+            <LinearLayout
+                android:id="@+id/linear_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/text_mileage">
+
+                <TextView
+                    android:id="@+id/text_cur_mileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:id="@+id/text_goal_mileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="진행상태 : "
+                android:textSize="14dp"
+                android:layout_below="@+id/linear_mileage"/>
+            <TextView
+                android:id="@+id/text_state_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모금진행중"
+                android:textSize="14dp"
+                android:layout_below="@+id/linear_mileage"
+                android:layout_toRightOf="@id/text_state"/>
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마감날짜 : "
+                android:textSize="14dp"
+                android:layout_below="@+id/text_state"/>
+
+            <TextView
+                android:id="@+id/end_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000.00.00"
+                android:textSize="14dp"
+                android:layout_below="@+id/text_state"
+                android:layout_toRightOf="@id/end_date"/>
+
+        </RelativeLayout>
+
+
+        <!--오른쪽 이미지 부분-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <!--이미지 오른쪽 정렬 해야댐 -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="120dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

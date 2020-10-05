@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.energydream.EnrollDonationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/enroll_donation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사업 등록하기"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+        <EditText
+            android:id="@+id/enroll_donation_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사업이름"
+            android:background="@drawable/design_white_box"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/enroll_donation_title"/>
+        <EditText
+            android:id="@+id/enroll_donation_goal_milage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="목표 마일리지"
+            android:background="@drawable/design_white_box"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/enroll_donation_name"/>
+        <TextView
+            android:id="@+id/enroll_donation_goal_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="모금 종료 날짜"
+            android:textSize="16dp"
+            android:background="@drawable/design_white_box"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/enroll_donation_goal_milage"
+            android:layout_toLeftOf="@id/enroll_donation_date"/>
+        <Button
+            android:id="@+id/enroll_donation_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/business_date"
+            android:layout_alignParentRight="true"
+            android:text="날짜선택"
+            android:textSize="14dp"
+            android:background="@drawable/design_main_button_2"
+            android:layout_below="@+id/enroll_donation_goal_milage" />
+        <EditText
+            android:id="@+id/enroll_donation_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="7"
+            android:hint="사업 세부 설명 "
+            android:gravity="top"
+            android:textSize="13dp"
+            android:background="@drawable/design_white_box"
+            android:padding="10dp"
+            android:layout_below="@id/enroll_donation_goal_date"/>
+
+        <Button
+            android:id="@+id/enroll_donation_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enroll_donation_contents"
+            android:background="@drawable/design_main_button_white"
+            android:text="사진등록" />
+
+        <ImageView
+            android:id="@+id/enroll_donation_img_value"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/enroll_donation_img"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/testimg" />
+        <Button
+            android:id="@+id/enroll_donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enroll"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/design_main_button"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/enroll_donation_img_value" />
+    </RelativeLayout>
+
+</ScrollView>

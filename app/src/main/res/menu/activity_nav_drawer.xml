@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/menu_plug"
+            android:title="콘센트 연결관리" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/menu_donation"
+            android:title="에너지 기부하기" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/menu_venture"
+            android:title="벤처기업 응원하기" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/menu_history"
+            android:title="기부내역" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/menu_chart"
+            android:title="통계" />
+    </group>
+
+    <item android:title="Business">
+        <menu>
+            <item
+                android:id="@+id/nav_add_business"
+                android:icon="@drawable/menu_add_business"
+                android:title="사업추가하기"/>
+        </menu>
+    </item>
+    <item android:title="Admin">
+        <menu>
+            <item
+                android:id="@+id/nav_approve_business"
+                android:icon="@drawable/menu_approve"
+                android:title="사업승인하기"/>
+        </menu>
+    </item>
+    <item android:title="Admin2">
+        <menu>
+            <item
+                android:id="@+id/nav_enroll_donation"
+                android:icon="@drawable/menu_approve"
+                android:title="에너지기부 추가하기"/>
+        </menu>
+    </item>
+
+    <item android:title="My Page">
+        <menu>
+            <item
+                android:id="@+id/nav_mypage"
+                android:icon="@drawable/menu_mypage"
+                android:title="마이페이지 "/>
+        </menu>
+
+    </item>
+
+
+</menu>

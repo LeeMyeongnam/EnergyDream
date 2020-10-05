@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.energydream.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        android:background="#eeeeee">
+
+        <ImageView
+            android:id="@+id/login_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/login_icon"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/text_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energy Dream"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@id/login_image"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/btn_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_logo"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btn_user"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/text_logo"
+                android:background="@drawable/design_main_background"
+                android:text="개인회원"
+                android:textColor="#ffffff"
+                android:textSize="13dp"/>
+
+            <Button
+                android:id="@+id/btn_company_user"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/text_logo"
+                android:layout_toRightOf="@id/btn_user"
+                android:background="@drawable/design_main_border"
+                android:text="기업회원"
+                android:textColor="#000000"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/insert_id"
+            android:layout_below="@+id/btn_linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:hint="아이디"
+            android:text="1234@1234.1234"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/insert_passwd"
+            android:layout_below="@+id/insert_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:hint="비밀번호"
+            android:text="12341234"/>
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/design_main_button"
+            android:layout_below="@+id/insert_passwd"
+            android:text="로그인"
+            android:textSize="18dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="개인 회원가입 하기" />
+
+        <TextView
+            android:id="@+id/sign_up_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:text="기업 회원가입 하기" />
+    </RelativeLayout>
+</FrameLayout>

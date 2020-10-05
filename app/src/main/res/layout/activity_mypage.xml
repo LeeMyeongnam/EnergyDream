@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마일리지"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@+id/text_mileage_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/text_mileage"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text_elec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="절약전기량"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_mileage" />
+    <TextView
+        android:id="@+id/text_elec_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_below="@+id/text_mileage"
+        android:layout_toRightOf="@id/text_elec"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="절약금액"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_elec" />
+    <TextView
+        android:id="@+id/text_coin_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_below="@+id/text_elec"
+        android:layout_toRightOf="@id/text_coin"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text_donation_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기부내역"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_coin" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_donation_list"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/test_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/test_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/test_1"
+                android:src="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/test_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/test_2"
+                android:src="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/test_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/test_3"
+                android:src="@drawable/ic_launcher_background" />
+
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

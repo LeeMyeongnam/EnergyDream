@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.energydream.DetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사업명"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/detail_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기업명"
+            android:textSize="15dp"
+            android:layout_below="@+id/detail_title"/>
+
+        <ImageView
+            android:id="@+id/detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/testimg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/detail_company"/>
+
+        <LinearLayout
+            android:id="@+id/linear_percent_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/detail_img">
+            <TextView
+                android:id="@+id/detail_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 %"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/detail_dday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D-25"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="#ff4411"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/detail_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            android:layout_below="@id/linear_percent_day"/>
+
+        <LinearLayout
+            android:id="@+id/linear_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_progress"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_img"
+                android:text="모금 마일리지 : "
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/detail_mileage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_img"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_goal_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linear_mileage">
+            <TextView
+                android:id="@+id/detail_goal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="목표 마일리지 : "
+                android:layout_toLeftOf="@id/detail_goal_text"/>
+            <TextView
+                android:id="@+id/detail_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 "
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/linear_mileage"/>s
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_goalDate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마감날짜 : "
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/linear_goal_mileage"/>
+        <TextView
+            android:id="@+id/detail_goalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.00.00"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/detail_goalDate_text"
+            android:layout_below="@id/linear_goal_mileage"/>
+        <TextView
+            android:id="@+id/detail_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="세부내용"
+            android:textSize="15dp"
+            android:layout_below="@id/detail_goalDate"/>
+        <Button
+            android:id="@+id/detail_godonation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기부하기"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/design_main_button_angul"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/detail_contents"/>
+
+    </RelativeLayout>
+
+</ScrollView>
